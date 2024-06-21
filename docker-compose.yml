@@ -1,14 +1,10 @@
 version: '3.5'
 
-service:
-  backend:
-    image: desafio_it_talent_junho_01
-        ports:
-            - "80:80"
+services:
     database:
         image: banco_it_talent-bd
         ports:
-            - "3306:3036"
+        - "3306:3036"
         environment:
             MYSQL_ROOT_PASSWORD: RootPassword
             MYSQL_DATABASE: banco_it_talent-bd
