@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.1'
 
 services:
     database:
@@ -6,7 +6,6 @@ services:
         ports:
         - "3306:3036"
         environment:
-            MYSQL_ROOT_PASSWORD: RootPassword
-            MYSQL_DATABASE: banco_it_talent-bd
-            MYSQL_USER: MainUser
-            MYSQL_PASSWORD: MainPassword
+            - MYSQL_ROOT_PASSWORD=root_password
+            - MYSQL_USER=root
+            - MYSQL_PASSWORD=password
